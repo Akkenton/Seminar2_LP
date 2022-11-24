@@ -7,8 +7,17 @@
 Console.Clear();
 int number = new Random().Next(100, 1000);
 Console.WriteLine(number);
-int numberOne = number / 100;
-int numberThree = number % 10;
 
-Console.Write(numberOne);
-Console.Write(numberThree);
+//Варианты решения:
+
+// int numberOne = number / 100;
+// int numberThree = number % 10;
+// Console.Write(numberOne);
+// Console.Write(numberThree);
+
+//-------------------------------------------
+
+// int Value = number % 10 + (number / 100) * 10;
+// Console.Write($"Реузльтат: {Value}");
+
+//-------------------------------------------
