@@ -7,15 +7,11 @@ int num = new Random().Next(10, 99);
 Console.WriteLine($"Случайное число: {num}");
 int secVal = num % 10;
 int firstVal = num / 10;
+
+int max = firstVal;
 if (secVal > firstVal)
 {
-    Console.WriteLine($"Большая цифра в двузначном числе: {secVal}");
+    max = secVal;
 }
-if (secVal < firstVal)
-{
-    Console.WriteLine($"Большая цифра в двузначном числе: {firstVal}");
-}
-if (secVal == firstVal)
-{
-    Console.WriteLine($"Большая цифра в двузначном числе: {firstVal}");
-}
+Console.WriteLine($"Максимальное число - {max}");
+
